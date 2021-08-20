@@ -1,0 +1,69 @@
+$font-stack: Arial,
+Helvetica,
+sans-serif;
+
+$light-color: #f4f4f4;
+$primary-color: #0e6cff;
+$secondary-color: #ff8700;
+
+body {
+    background-color: $light-color;
+    font-family: $font-stack;
+    line-height: 1.6;
+}
+
+
+.showcase {
+    background-color: $primary-color;
+    height: 600px;
+    color: #fff;
+
+    a {
+        color: #fff;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a:hover {
+            color: $secondary-color;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        li {
+            padding: 20px;
+        }
+    }
+
+    &-content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 50%;
+        }
+
+        h1 {
+            font-size: 50px;
+            line-height: 1.2;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+@import './libs/reset';
+@import './libs/buttons';
+@import './libs/utilities';
+@import './libs/config';
+@import './libs/mobile';
